@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>CFCH Registration</title>
+
     <style>
         body {
             margin: 0;
@@ -15,44 +16,62 @@
             margin: 0 auto;
         }
 
-        img {
+        .page img {
             width: 100%;
             display: block;
         }
 
         .click-register {
             position: absolute;
-            display: block;
-            left: 33%;
-            top: 58%;
-            width: 35%;
-            height: 15%;
+            left: 18%;
+            top: 50%;
+            width: 64%;
+            height: 25%;
+            z-index: 10;
             cursor: pointer;
         }
 
         .click-waitlist {
             position: absolute;
-            display: block;
-            left: 20%;
-            top: 80%;
-            width: 60%;
-            height: 8%;
+            left: 10%;
+            top: 78%;
+            width: 80%;
+            height: 12%;
+            z-index: 10;
             cursor: pointer;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-weight: bold;
+            z-index: 9999;
+            box-shadow: 0 2px 8px rgba(0,0,0,.25);
         }
     </style>
 </head>
 
 <body>
 
+<a href="index.html" class="back-button">← Back</a>
+
 <div class="page">
     <img src="3.png" alt="Registration">
 
     <a class="click-register"
        href="https://kidsmealsinc.volunteerhub.com/vv2/lp/cfch"
-       target="_blank"></a>
+       target="_blank"
+       aria-label="Register Here"></a>
 
     <a class="click-waitlist"
-       href="waitlist.html"></a>
+       href="waitlist.html"
+       aria-label="Go To Waitlist"></a>
 </div>
 
 </body>
