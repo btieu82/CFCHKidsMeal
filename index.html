@@ -1,101 +1,96 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFCH Kids' Meals Volunteer Event</title>
 
-```
-<title>CFCH Kids' Meals Volunteer Event</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            overflow-x: hidden;
+        }
 
-<style>
-    body {
-        margin: 0;
-        background: #000;
-    }
+        .page {
+            position: relative;
+            width: 100vw;
+            max-width: 1366px;
+            margin: 0 auto;
+        }
 
-    .page {
-        position: relative;
-        width: 100%;
-        max-width: 1366px;
-        margin: 0 auto;
-    }
+        .page img {
+            width: 100vw;
+            height: auto;
+            display: block;
+        }
 
-    .page img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+        .click-area {
+            position: absolute;
+            display: block;
+            cursor: pointer;
+            z-index: 10;
+        }
 
-    .click-area {
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        z-index: 10;
-    }
+        .signup {
+            left: 64%;
+            top: 27%;
+            width: 17%;
+            height: 17%;
+        }
 
-    /* YES! SIGN ME UP */
-    .signup {
-        left: 58%;
-        top: 22%;
-        width: 22%;
-        height: 22%;
-    }
+        .waitlist {
+            left: 82%;
+            top: 27%;
+            width: 17%;
+            height: 17%;
+        }
 
-    /* WAITLIST */
-    .waitlist {
-        left: 79%;
-        top: 22%;
-        width: 20%;
-        height: 22%;
-    }
+        .calendar {
+            left: 2%;
+            top: 49%;
+            width: 20%;
+            height: 18%;
+        }
 
-    /* DATE / CALENDAR */
-    .calendar {
-        left: 2%;
-        top: 48%;
-        width: 20%;
-        height: 20%;
-    }
+        .map {
+            left: 38%;
+            top: 49%;
+            width: 22%;
+            height: 18%;
+        }
 
-    /* PLACE / MAP */
-    .map {
-        left: 38%;
-        top: 48%;
-        width: 22%;
-        height: 20%;
-    }
-</style>
-```
+        @media (max-width: 600px) {
+            .page {
+                width: 100vw;
+                max-width: none;
+            }
 
+            .page img {
+                width: 100vw;
+                max-width: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="page">
+    <img src="1.png" alt="CFCH Volunteer Event">
 
-```
-<img src="1.png" alt="CFCH Volunteer Event">
+    <a class="click-area signup" href="register.html" aria-label="Sign Me Up"></a>
+    <a class="click-area waitlist" href="waitlist.html" aria-label="Waitlist"></a>
 
-<a class="click-area signup"
-   href="register.html"
-   aria-label="Sign Me Up"></a>
+    <a class="click-area calendar"
+       href="https://calendar.app.google/mqHau23fCCbNsg5TA"
+       target="_blank"
+       aria-label="Add To Calendar"></a>
 
-<a class="click-area waitlist"
-   href="waitlist.html"
-   aria-label="Waitlist"></a>
-
-<a class="click-area calendar"
-   href="https://calendar.app.google/mqHau23fCCbNsg5TA"
-   target="_blank"
-   aria-label="Add To Calendar"></a>
-
-<a class="click-area map"
-   href="https://maps.app.goo.gl/L1KRmcjvBr65qgsw8"
-   target="_blank"
-   aria-label="Open Map"></a>
-```
-
+    <a class="click-area map"
+       href="https://maps.app.goo.gl/L1KRmcjvBr65qgsw8"
+       target="_blank"
+       aria-label="Open Map"></a>
 </div>
 
 </body>
