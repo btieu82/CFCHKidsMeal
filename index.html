@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>CFCH Kids' Meals Volunteer Event</title>
+
     <style>
         body {
             margin: 0;
@@ -23,20 +24,40 @@
         .click-area {
             position: absolute;
             display: block;
+            cursor: pointer;
+            z-index: 10;
         }
 
+        /* YES! SIGN ME UP */
         .signup {
-            left: 63.8%;
-            top: 27.6%;
-            width: 16%;
-            height: 16.5%;
+            left: 58%;
+            top: 22%;
+            width: 22%;
+            height: 22%;
         }
 
+        /* WAITLIST */
         .waitlist {
-            left: 81.8%;
-            top: 27.6%;
-            width: 15.9%;
-            height: 16.5%;
+            left: 79%;
+            top: 22%;
+            width: 20%;
+            height: 22%;
+        }
+
+        /* DATE / CALENDAR */
+        .calendar {
+            left: 2%;
+            top: 48%;
+            width: 20%;
+            height: 20%;
+        }
+
+        /* PLACE / MAP */
+        .map {
+            left: 38%;
+            top: 48%;
+            width: 22%;
+            height: 20%;
         }
     </style>
 </head>
@@ -46,9 +67,23 @@
 <div class="page">
     <img src="1.png" alt="CFCH Volunteer Event">
 
-    <a class="click-area signup" href="register.html" aria-label="Sign me up"></a>
+    <a class="click-area signup"
+       href="register.html"
+       aria-label="Sign Me Up"></a>
 
-    <a class="click-area waitlist" href="waitlist.html" aria-label="Add me to the waitlist"></a>
+    <a class="click-area waitlist"
+       href="waitlist.html"
+       aria-label="Waitlist"></a>
+
+    <a class="click-area calendar"
+       href="https://calendar.app.google/mqHau23fCCbNsg5TA"
+       target="_blank"
+       aria-label="Add to Calendar"></a>
+
+    <a class="click-area map"
+       href="https://maps.app.goo.gl/L1KRmcjvBr65qgsw8"
+       target="_blank"
+       aria-label="Open Map"></a>
 </div>
 
 </body>
