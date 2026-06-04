@@ -6,36 +6,56 @@
         body {
             margin: 0;
             background: #000;
-            text-align: center;
         }
 
-        img {
+        .page {
+            position: relative;
+            width: 100%;
+            max-width: 1366px;
+            margin: 0 auto;
+        }
+
+        .page img {
             width: 100%;
             display: block;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 18px 32px;
-            margin: 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            background: #9BE564;
-            color: black;
+        .click-area {
+            position: absolute;
+            display: block;
+        }
+
+        .register {
+            left: 34.8%;
+            top: 60.5%;
+            width: 31.2%;
+            height: 11%;
+        }
+
+        .waitlist-link {
+            left: 24%;
+            top: 82%;
+            width: 52%;
+            height: 5%;
         }
     </style>
 </head>
+
 <body>
 
-<img src="3.png" alt="Registration">
+<div class="page">
+    <img src="3.png" alt="Registration">
 
-<a class="btn"
-   href="https://kidsmealsinc.volunteerhub.com/vv2/lp/cfch"
-   target="_blank">
-   REGISTER HERE
-</a>
+    <a class="click-area register"
+       href="https://kidsmealsinc.volunteerhub.com/vv2/lp/cfch"
+       target="_blank"
+       aria-label="Register Here"></a>
+
+    <a class="click-area waitlist-link"
+       href="waitlist.html"
+       aria-label="Go to Waitlist"></a>
+
+</div>
 
 </body>
 </html>
