@@ -15,28 +15,29 @@
             margin: 0 auto;
         }
 
-        .page img {
+        img {
             width: 100%;
             display: block;
         }
 
-        .click-area {
+        .click-register {
             position: absolute;
             display: block;
+            left: 33%;
+            top: 58%;
+            width: 35%;
+            height: 15%;
+            cursor: pointer;
         }
 
-        .register {
-            left: 34.8%;
-            top: 60.5%;
-            width: 31.2%;
-            height: 11%;
-        }
-
-        .waitlist-link {
-            left: 24%;
-            top: 82%;
-            width: 52%;
-            height: 5%;
+        .click-waitlist {
+            position: absolute;
+            display: block;
+            left: 20%;
+            top: 80%;
+            width: 60%;
+            height: 8%;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -46,15 +47,12 @@
 <div class="page">
     <img src="3.png" alt="Registration">
 
-    <a class="click-area register"
+    <a class="click-register"
        href="https://kidsmealsinc.volunteerhub.com/vv2/lp/cfch"
-       target="_blank"
-       aria-label="Register Here"></a>
+       target="_blank"></a>
 
-    <a class="click-area waitlist-link"
-       href="waitlist.html"
-       aria-label="Go to Waitlist"></a>
-
+    <a class="click-waitlist"
+       href="waitlist.html"></a>
 </div>
 
 </body>
