@@ -5,37 +5,45 @@
     <style>
         body {
             margin: 0;
-            background: #000;
-            text-align: center;
+            background: #df5729;
         }
 
-        img {
+        .page {
+            position: relative;
+            width: 100%;
+            max-width: 1366px;
+            margin: 0 auto;
+        }
+
+        .page img {
             width: 100%;
             display: block;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 18px 32px;
-            margin: 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            background: #F5A623;
-            color: white;
+        .click-area {
+            position: absolute;
+            display: block;
+        }
+
+        .add-waitlist {
+            left: 35.3%;
+            top: 44.5%;
+            width: 30.2%;
+            height: 11.5%;
         }
     </style>
 </head>
+
 <body>
 
-<img src="2.png" alt="Waitlist">
+<div class="page">
+    <img src="2.png" alt="Waitlist">
 
-<a class="btn"
-   href="https://forms.gle/FLhzJnmqeqn4GWsF9"
-   target="_blank">
-   ADD TO WAITLIST
-</a>
+    <a class="click-area add-waitlist"
+       href="https://forms.gle/FLhzJnmqeqn4GWsF9"
+       target="_blank"
+       aria-label="Add to waitlist"></a>
+</div>
 
 </body>
 </html>
