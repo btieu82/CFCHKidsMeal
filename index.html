@@ -2,24 +2,54 @@
 <html>
 <head>
     <title>CFCH Kids' Meals Volunteer Event</title>
-
     <style>
         body {
             margin: 0;
             background: #000;
-            text-align: center;
         }
 
-        img {
+        .page {
+            position: relative;
+            width: 100%;
+            max-width: 1366px;
+            margin: 0 auto;
+        }
+
+        .page img {
             width: 100%;
             display: block;
+        }
+
+        .click-area {
+            position: absolute;
+            display: block;
+        }
+
+        .signup {
+            left: 63.8%;
+            top: 27.6%;
+            width: 16%;
+            height: 16.5%;
+        }
+
+        .waitlist {
+            left: 81.8%;
+            top: 27.6%;
+            width: 15.9%;
+            height: 16.5%;
         }
     </style>
 </head>
 
 <body>
 
-    <img src="1.png" alt="Volunteer Event">
+<div class="page">
+    <img src="1.png" alt="CFCH Volunteer Event">
+
+    <a class="click-area signup" href="register.html" aria-label="Sign me up"></a>
+
+    <a class="click-area waitlist" href="waitlist.html" aria-label="Add me to the waitlist"></a>
+</div>
 
 </body>
 </html>
