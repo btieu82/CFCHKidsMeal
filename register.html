@@ -1,60 +1,66 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <title>CFCH Registration</title>
 
-    <style>
-        body {
-            margin: 0;
-            background: #000;
-        }
+```
+<style>
+    body {
+        margin: 0;
+        background: #000;
+    }
 
-        .page {
-            position: relative;
-            width: 100%;
-            max-width: 1366px;
-            margin: 0 auto;
-        }
+    .page {
+        position: relative;
+        width: 100%;
+        max-width: 1366px;
+        margin: 0 auto;
+    }
 
-        .page img {
-            width: 100%;
-            display: block;
-        }
+    .page img {
+        width: 100%;
+        display: block;
+    }
 
-        .click-register {
-            position: absolute;
-            left: 18%;
-            top: 50%;
-            width: 64%;
-            height: 25%;
-            z-index: 10;
-            cursor: pointer;
-        }
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 8px;
+        font-weight: bold;
+        z-index: 9999;
+        box-shadow: 0 2px 8px rgba(0,0,0,.25);
+    }
 
-        .click-waitlist {
-            position: absolute;
-            left: 10%;
-            top: 78%;
-            width: 80%;
-            height: 12%;
-            z-index: 10;
-            cursor: pointer;
-        }
+    /* REGISTER HERE button */
+    .click-register {
+        position: absolute;
+        left: 20%;
+        top: 52%;
+        width: 60%;
+        height: 18%;
+        z-index: 10;
+        cursor: pointer;
+    }
 
-        .back-button {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            background: white;
-            color: black;
-            text-decoration: none;
-            padding: 12px 18px;
-            border-radius: 8px;
-            font-weight: bold;
-            z-index: 9999;
-            box-shadow: 0 2px 8px rgba(0,0,0,.25);
-        }
-    </style>
+    /* Entire bottom text area */
+    .click-waitlist {
+        position: absolute;
+        left: 0%;
+        top: 72%;
+        width: 100%;
+        height: 20%;
+        z-index: 10;
+        cursor: pointer;
+    }
+</style>
+```
+
 </head>
 
 <body>
@@ -62,16 +68,21 @@
 <a href="index.html" class="back-button">← Back</a>
 
 <div class="page">
-    <img src="3.png" alt="Registration">
 
-    <a class="click-register"
-       href="https://kidsmealsinc.volunteerhub.com/vv2/lp/cfch"
-       target="_blank"
-       aria-label="Register Here"></a>
+```
+<img src="3.png" alt="Registration">
 
-    <a class="click-waitlist"
-       href="waitlist.html"
-       aria-label="Go To Waitlist"></a>
+<a class="click-register"
+   href="https://kidsmealsinc.volunteerhub.com/vv2/lp/cfch"
+   target="_blank"
+   aria-label="Register Here"></a>
+
+<a class="click-waitlist"
+   href="https://forms.gle/nQZ7Ejxtsn1WGvYA9"
+   target="_blank"
+   aria-label="Join Waitlist"></a>
+```
+
 </div>
 
 </body>
