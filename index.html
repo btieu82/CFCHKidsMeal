@@ -1,154 +1,152 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFCH Kids' Meals Volunteer Event</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CFCH Kids' Meals Volunteer Event</title>
 
-```
 <style>
-    body {
-        margin: 0;
-        background: #000;
-        overflow-x: hidden;
-    }
+body {
+    margin: 0;
+    background: #000;
+}
 
+.page {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.page img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.click-area {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Desktop */
+.signup {
+    left: 58%;
+    top: 22%;
+    width: 22%;
+    height: 22%;
+}
+
+.waitlist {
+    left: 79%;
+    top: 22%;
+    width: 20%;
+    height: 22%;
+}
+
+.calendar {
+    left: 2%;
+    top: 48%;
+    width: 20%;
+    height: 20%;
+}
+
+.map {
+    left: 38%;
+    top: 48%;
+    width: 22%;
+    height: 20%;
+}
+
+.info {
+    left: 82%;
+    top: 88%;
+    width: 17%;
+    height: 8%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
     .page {
-        position: relative;
-        width: 100%;
-        max-width: 1366px;
-        margin: 0 auto;
+        max-width: 414px;
     }
 
-    .page img {
-        width: 100%;
-        height: auto;
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
         display: block;
     }
 
-    .click-area {
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    /* YES! SIGN ME UP */
     .signup {
-        left: 58%;
-        top: 22%;
-        width: 22%;
-        height: 22%;
+        left: 9%;
+        top: 66%;
+        width: 38%;
+        height: 10%;
     }
 
-    /* WAITLIST */
     .waitlist {
-        left: 79%;
-        top: 22%;
-        width: 20%;
-        height: 22%;
+        left: 54%;
+        top: 66%;
+        width: 39%;
+        height: 10%;
     }
 
-    /* DATE / CALENDAR */
     .calendar {
-        left: 2%;
-        top: 48%;
-        width: 20%;
-        height: 20%;
-    }
-
-    /* PLACE / MAP */
-    .map {
-        left: 38%;
-        top: 48%;
-        width: 22%;
-        height: 20%;
-    }
-
-    /* GENERAL INFORMATION */
-    .info {
-        left: 82%;
-        top: 88%;
-        width: 17%;
+        left: 6%;
+        top: 28%;
+        width: 55%;
         height: 8%;
     }
 
-    @media (max-width: 768px) {
-        .signup {
-            left: 58%;
-            top: 22%;
-            width: 22%;
-            height: 22%;
-        }
-
-        .waitlist {
-            left: 79%;
-            top: 22%;
-            width: 20%;
-            height: 22%;
-        }
-
-        .calendar {
-            left: 2%;
-            top: 48%;
-            width: 20%;
-            height: 20%;
-        }
-
-        .map {
-            left: 38%;
-            top: 48%;
-            width: 22%;
-            height: 20%;
-        }
-
-        .info {
-            left: 82%;
-            top: 88%;
-            width: 17%;
-            height: 8%;
-        }
+    .map {
+        left: 6%;
+        top: 38%;
+        width: 78%;
+        height: 8%;
     }
-</style>
-```
 
+    .info {
+        left: 63%;
+        top: 94%;
+        width: 30%;
+        height: 4%;
+    }
+}
+</style>
 </head>
 
 <body>
 
 <div class="page">
 
-```
-<img src="1.png" alt="CFCH Volunteer Event">
+    <img class="desktop-img" src="1.png" alt="CFCH Volunteer Event">
+    <img class="mobile-img" src="1-Mobile.png" alt="CFCH Volunteer Event Mobile">
 
-<!-- YES SIGN ME UP -->
-<a class="click-area signup"
-   href="register.html"
-   aria-label="Sign Me Up"></a>
+    <a class="click-area signup" href="register.html" aria-label="Sign Me Up"></a>
 
-<!-- WAITLIST -->
-<a class="click-area waitlist"
-   href="waitlist.html"
-   aria-label="Waitlist"></a>
+    <a class="click-area waitlist" href="waitlist.html" aria-label="Waitlist"></a>
 
-<!-- CALENDAR -->
-<a class="click-area calendar"
-   href="https://calendar.app.google/mqHau23fCCbNsg5TA"
-   target="_blank"
-   aria-label="Add To Calendar"></a>
+    <a class="click-area calendar"
+       href="https://calendar.app.google/mqHau23fCCbNsg5TA"
+       target="_blank"
+       aria-label="Add To Calendar"></a>
 
-<!-- MAP -->
-<a class="click-area map"
-   href="https://maps.app.goo.gl/L1KRmcjvBr65qgsw8"
-   target="_blank"
-   aria-label="Open Map"></a>
+    <a class="click-area map"
+       href="https://maps.app.goo.gl/L1KRmcjvBr65qgsw8"
+       target="_blank"
+       aria-label="Open Map"></a>
 
-<!-- GENERAL INFORMATION -->
-<a class="click-area info"
-   href="info.html"
-   aria-label="General Information"></a>
-```
+    <a class="click-area info"
+       href="info.html"
+       aria-label="General Information"></a>
 
 </div>
 
