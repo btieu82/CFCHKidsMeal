@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>CFCH Kids' Meals Volunteer Event</title>
 
 <style>
+
 body {
     margin: 0;
     background: #000;
@@ -18,14 +20,16 @@ body {
     margin: 0 auto;
 }
 
-.page img {
+.desktop-img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .mobile-img {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 .click-area {
@@ -35,7 +39,10 @@ body {
     z-index: 10;
 }
 
-/* Desktop */
+/* ===================== */
+/* DESKTOP HOTSPOTS      */
+/* ===================== */
+
 .signup {
     left: 58%;
     top: 22%;
@@ -71,19 +78,25 @@ body {
     height: 8%;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+/* ===================== */
+/* MOBILE                */
+/* ===================== */
+
+@media screen and (max-width: 768px) {
+
+    .desktop-img {
+        display: none !important;
+    }
+
+    .mobile-img {
+        display: block !important;
+    }
+
     .page {
         max-width: 414px;
     }
 
-    .desktop-img {
-        display: none;
-    }
-
-    .mobile-img {
-        display: block;
-    }
+    /* YES! SIGN ME UP */
 
     .signup {
         left: 9%;
@@ -92,12 +105,16 @@ body {
         height: 10%;
     }
 
+    /* WAITLIST */
+
     .waitlist {
         left: 54%;
         top: 66%;
         width: 39%;
         height: 10%;
     }
+
+    /* CALENDAR */
 
     .calendar {
         left: 6%;
@@ -106,6 +123,8 @@ body {
         height: 8%;
     }
 
+    /* MAP */
+
     .map {
         left: 6%;
         top: 38%;
@@ -113,13 +132,16 @@ body {
         height: 8%;
     }
 
+    /* GENERAL INFORMATION */
+
     .info {
-        left: 63%;
+        left: 67%;
         top: 94%;
-        width: 30%;
+        width: 28%;
         height: 4%;
     }
 }
+
 </style>
 </head>
 
@@ -127,23 +149,39 @@ body {
 
 <div class="page">
 
-    <img class="desktop-img" src="1.png" alt="CFCH Volunteer Event">
-    <img class="mobile-img" src="1-Mobile.png" alt="CFCH Volunteer Event Mobile">
+    <!-- Desktop -->
+    <img class="desktop-img"
+         src="1.png"
+         alt="CFCH Volunteer Event">
 
-    <a class="click-area signup" href="register.html" aria-label="Sign Me Up"></a>
+    <!-- Mobile -->
+    <img class="mobile-img"
+         src="1-Mobile.png"
+         alt="CFCH Volunteer Event Mobile">
 
-    <a class="click-area waitlist" href="waitlist.html" aria-label="Waitlist"></a>
+    <!-- SIGN UP -->
+    <a class="click-area signup"
+       href="register.html"
+       aria-label="Sign Me Up"></a>
 
+    <!-- WAITLIST -->
+    <a class="click-area waitlist"
+       href="waitlist.html"
+       aria-label="Waitlist"></a>
+
+    <!-- CALENDAR -->
     <a class="click-area calendar"
        href="https://calendar.app.google/mqHau23fCCbNsg5TA"
        target="_blank"
        aria-label="Add To Calendar"></a>
 
+    <!-- MAP -->
     <a class="click-area map"
        href="https://maps.app.goo.gl/L1KRmcjvBr65qgsw8"
        target="_blank"
        aria-label="Open Map"></a>
 
+    <!-- GENERAL INFORMATION -->
     <a class="click-area info"
        href="info.html"
        aria-label="General Information"></a>
