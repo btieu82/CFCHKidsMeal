@@ -18,16 +18,11 @@ body {
     margin: 0 auto;
 }
 
-.desktop-img {
+.page picture,
+.page img {
+    width: 100%;
+    height: auto;
     display: block;
-    width: 100%;
-    height: auto;
-}
-
-.mobile-img {
-    display: none;
-    width: 100%;
-    height: auto;
 }
 
 .back-button {
@@ -50,8 +45,8 @@ body {
 .click-register,
 .click-waitlist {
     position: absolute;
-    cursor: pointer;
     display: block;
+    cursor: pointer;
 }
 
 /* Desktop */
@@ -73,14 +68,6 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-    .desktop-img {
-        display: none !important;
-    }
-
-    .mobile-img {
-        display: block !important;
-    }
-
     .page {
         max-width: 414px;
     }
@@ -113,8 +100,10 @@ body {
 
 <div class="page">
 
-    <img class="desktop-img" src="3.png" alt="Registration">
-    <img class="mobile-img" src="Register-Mobile.png" alt="Registration Mobile">
+    <picture>
+        <source media="(max-width: 768px)" srcset="Register-Mobile.png">
+        <img src="3.png" alt="Registration">
+    </picture>
 
     <a class="click-register"
        href="https://kidsmealsinc.volunteerhub.com/vv2/lp/cfch"
