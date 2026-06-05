@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -19,62 +18,53 @@ body {
     margin: 0 auto;
 }
 
-.page img {
+.desktop-img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .mobile-img {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 .back-button {
     position: fixed;
     top: 20px;
     left: 20px;
-
     background: #f4b53f;
     color: white;
-
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: 700;
     font-size: 18px;
-
     padding: 10px 22px;
-
     border: 4px solid black;
     border-radius: 999px;
-
     box-shadow: 6px 5px 0 #d62c3a;
-
     z-index: 9999;
 }
 
 .click-area {
     position: absolute;
+    display: block;
+    left: 25%;
+    top: 52%;
+    width: 50%;
+    height: 18%;
     z-index: 100;
     cursor: pointer;
 }
 
-/* Desktop button */
-.click-area {
-    left: 35%;
-    top: 60%;
-    width: 30%;
-    height: 10%;
-}
-
-/* Mobile layout */
-@media (max-width: 768px) {
-
+@media screen and (max-width: 768px) {
     .desktop-img {
-        display: none;
+        display: none !important;
     }
 
     .mobile-img {
-        display: block;
+        display: block !important;
     }
 
     .page {
@@ -87,14 +77,13 @@ body {
     }
 
     .click-area {
-        left: 18%;
-        top: 33%;
-        width: 68%;
-        height: 8%;
+        left: 10%;
+        top: 26%;
+        width: 80%;
+        height: 18%;
     }
 }
 </style>
-
 </head>
 
 <body>
@@ -103,15 +92,13 @@ body {
 
 <div class="page">
 
-```
-<img class="desktop-img" src="2.png" alt="Waitlist">
-<img class="mobile-img" src="Waitlist-Mobile.png" alt="Waitlist">
+    <img class="desktop-img" src="2.png" alt="Waitlist">
+    <img class="mobile-img" src="Waitlist-Mobile.png" alt="Waitlist Mobile">
 
-<a class="click-area"
-   href="https://forms.gle/FLhzJnmqeqn4GWsF9"
-   target="_blank"
-   aria-label="Add To Waitlist"></a>
-```
+    <a class="click-area"
+       href="https://forms.gle/FLhzJnmqeqn4GWsF9"
+       target="_blank"
+       aria-label="Add To Waitlist"></a>
 
 </div>
 
