@@ -1,52 +1,78 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Information</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>General Information</title>
 
-    <style>
-        body {
-            margin: 0;
-            background: #000;
-        }
+<style>
+body {
+    margin: 0;
+    background: #000;
+}
 
-        .page {
-            position: relative;
-            width: 100%;
-            max-width: 1366px;
-            margin: 0 auto;
-        }
+.page {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
 
-        .page img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+.page img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-        .back-button {
-            position: fixed;
-            top: 25px;
-            left: 25px;
+.mobile-img {
+    display: none;
+}
 
-            background: #f4b53f;
-            color: white;
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
 
-            text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-weight: 700;
-            font-size: 22px;
+    background: #f4b53f;
+    color: white;
 
-            padding: 12px 28px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
 
-            border: 5px solid black;
-            border-radius: 999px;
+    padding: 10px 22px;
 
-            box-shadow: 8px 6px 0 #d62c3a;
+    border: 4px solid black;
+    border-radius: 999px;
 
-            z-index: 9999;
-        }
-    </style>
+    box-shadow: 6px 5px 0 #d62c3a;
+
+    z-index: 9999;
+}
+
+@media (max-width: 768px) {
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .page {
+        max-width: 414px;
+    }
+
+    .back-button {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+}
+</style>
+
 </head>
 
 <body>
@@ -54,7 +80,12 @@
 <a href="index.html" class="back-button">HOME</a>
 
 <div class="page">
-    <img src="4.png" alt="General Information">
+
+```
+<img class="desktop-img" src="4.png" alt="General Information">
+<img class="mobile-img" src="Info-Mobile.png" alt="General Information">
+```
+
 </div>
 
 </body>
