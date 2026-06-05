@@ -49,7 +49,10 @@ body {
     cursor: pointer;
 }
 
-/* Desktop register button */
+/* ===================== */
+/* DESKTOP               */
+/* ===================== */
+
 .click-register {
     left: 32%;
     top: 69%;
@@ -58,7 +61,6 @@ body {
     z-index: 200;
 }
 
-/* Desktop waitlist text */
 .click-waitlist {
     left: 20%;
     top: 84%;
@@ -67,8 +69,12 @@ body {
     z-index: 300;
 }
 
-/* Mobile */
+/* ===================== */
+/* MOBILE                */
+/* ===================== */
+
 @media screen and (max-width: 768px) {
+
     .page {
         max-width: 414px;
     }
@@ -78,23 +84,26 @@ body {
         padding: 8px 18px;
     }
 
-    .click-waitlist {
-    left: 3%;
-    top: 47%;
-    width: 94%;
-    height: 10%;
-    z-index: 300;
-    background: rgba(255, 0, 0, 0.25);
-}
+    .click-register {
+        left: 15%;
+        top: 44%;
+        width: 70%;
+        height: 12%;
+        z-index: 200;
+    }
 
     .click-waitlist {
-    left: 4%;
-    top: 51%;
-    width: 92%;
-    height: 8%;
-    z-index: 300;
+        left: 4%;
+        top: 49%;
+        width: 92%;
+        height: 8%;
+        z-index: 300;
+
+        /* TEMPORARY - REMOVE AFTER ALIGNMENT */
+        background: rgba(255, 0, 0, 0.25);
+    }
 }
-}
+
 </style>
 </head>
 
