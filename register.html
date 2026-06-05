@@ -6,7 +6,6 @@
 <title>CFCH Registration</title>
 
 <style>
-
 body {
     margin: 0;
     background: #000;
@@ -30,22 +29,16 @@ body {
     position: fixed;
     top: 20px;
     left: 20px;
-
     background: #f4b53f;
     color: white;
-
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: 700;
     font-size: 18px;
-
     padding: 10px 22px;
-
     border: 4px solid black;
     border-radius: 999px;
-
     box-shadow: 6px 5px 0 #d62c3a;
-
     z-index: 9999;
 }
 
@@ -56,10 +49,7 @@ body {
     cursor: pointer;
 }
 
-/* ===================== */
-/* DESKTOP HOTSPOTS      */
-/* ===================== */
-
+/* Desktop register button */
 .click-register {
     left: 32%;
     top: 69%;
@@ -68,6 +58,7 @@ body {
     z-index: 200;
 }
 
+/* Desktop waitlist text */
 .click-waitlist {
     left: 20%;
     top: 84%;
@@ -76,12 +67,8 @@ body {
     z-index: 300;
 }
 
-/* ===================== */
-/* MOBILE HOTSPOTS       */
-/* ===================== */
-
+/* Mobile */
 @media screen and (max-width: 768px) {
-
     .page {
         max-width: 414px;
     }
@@ -91,8 +78,6 @@ body {
         padding: 8px 18px;
     }
 
-    /* REGISTER HERE button */
-
     .click-register {
         left: 15%;
         top: 44%;
@@ -101,17 +86,14 @@ body {
         z-index: 200;
     }
 
-    /* Entire waitlist banner */
-
     .click-waitlist {
         left: 0%;
-        top: 62%;
+        top: 71%;
         width: 100%;
-        height: 18%;
+        height: 12%;
         z-index: 300;
     }
 }
-
 </style>
 </head>
 
@@ -122,21 +104,14 @@ body {
 <div class="page">
 
     <picture>
-        <source media="(max-width: 768px)"
-                srcset="Register-Mobile.png">
-
-        <img src="3.png"
-             alt="Registration">
+        <source media="(max-width: 768px)" srcset="Register-Mobile.png">
+        <img src="3.png" alt="Registration">
     </picture>
-
-    <!-- REGISTER HERE -->
 
     <a class="click-register"
        href="https://kidsmealsinc.volunteerhub.com/vv2/lp/cfch"
        target="_blank"
        aria-label="Register Here"></a>
-
-    <!-- WAITLIST -->
 
     <a class="click-waitlist"
        href="https://forms.gle/nQZ7Ejxtsn1WGvYA9"
