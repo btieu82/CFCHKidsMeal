@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CFCH Kids' Meals Volunteer Event</title>
 
     <style>
         body {
             margin: 0;
             background: #000;
-            overflow-x: hidden;
         }
 
         .page {
             position: relative;
-            width: 100vw;
+            width: 100%;
             max-width: 1366px;
             margin: 0 auto;
         }
 
         .page img {
-            width: 100vw;
-            height: auto;
+            width: 100%;
             display: block;
         }
 
@@ -32,44 +28,36 @@
             z-index: 10;
         }
 
+        /* YES! SIGN ME UP */
         .signup {
-            left: 64%;
-            top: 27%;
-            width: 17%;
-            height: 17%;
+            left: 58%;
+            top: 22%;
+            width: 22%;
+            height: 22%;
         }
 
+        /* WAITLIST */
         .waitlist {
-            left: 82%;
-            top: 27%;
-            width: 17%;
-            height: 17%;
+            left: 79%;
+            top: 22%;
+            width: 20%;
+            height: 22%;
         }
 
+        /* DATE / CALENDAR */
         .calendar {
             left: 2%;
-            top: 49%;
+            top: 48%;
             width: 20%;
-            height: 18%;
+            height: 20%;
         }
 
+        /* PLACE / MAP */
         .map {
             left: 38%;
-            top: 49%;
+            top: 48%;
             width: 22%;
-            height: 18%;
-        }
-
-        @media (max-width: 600px) {
-            .page {
-                width: 100vw;
-                max-width: none;
-            }
-
-            .page img {
-                width: 100vw;
-                max-width: none;
-            }
+            height: 20%;
         }
     </style>
 </head>
@@ -79,13 +67,18 @@
 <div class="page">
     <img src="1.png" alt="CFCH Volunteer Event">
 
-    <a class="click-area signup" href="register.html" aria-label="Sign Me Up"></a>
-    <a class="click-area waitlist" href="waitlist.html" aria-label="Waitlist"></a>
+    <a class="click-area signup"
+       href="register.html"
+       aria-label="Sign Me Up"></a>
+
+    <a class="click-area waitlist"
+       href="waitlist.html"
+       aria-label="Waitlist"></a>
 
     <a class="click-area calendar"
        href="https://calendar.app.google/mqHau23fCCbNsg5TA"
        target="_blank"
-       aria-label="Add To Calendar"></a>
+       aria-label="Add to Calendar"></a>
 
     <a class="click-area map"
        href="https://maps.app.goo.gl/L1KRmcjvBr65qgsw8"
